@@ -1,0 +1,193 @@
+#root {
+    height: 100vh;
+}
+
+html {
+    height: 100%;
+}
+
+/* ----------------------------- Top-Level Setup ---------------------------- */
+.container-primary {
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+}
+
+.container-secondary {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.wsidebar {
+    scrollbar-width: thin;
+}
+
+.list-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.125rem;
+    padding: 12px 24px;
+}
+
+.table-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.125rem;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.table {
+    display: flex;
+    //float: left;
+    width: 100%;
+    flex-direction: column;
+    //align-items: center;
+}
+
+.table-entries {
+    overflow-y: scroll;
+}
+
+.table-header {
+    width: calc(100% - 56px);
+    box-sizing: border-box;
+    margin-left: 24px;
+    margin-right: 32px;
+}
+
+.table-header-section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.table-header-button {
+    padding: 0;
+    margin-left: 36px;
+}
+
+.table-header-button-disabled{
+    padding: 0;
+    margin-left: 12px;
+    cursor: default;
+}
+
+.table-header-buttons {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.table-entry-buttons {
+    padding: 0;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.table-entry {
+    //padding: 12px 24px;
+    //padding: 12px 0;
+}
+
+.button-group {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header {
+    width: calc(100% - 48px);
+    box-sizing: border-box;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 12px
+}
+
+.sidebar-options {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.sidebar-buttons {
+    padding: 0;
+}
+
+.modal-input {
+    width: 100%;
+}
+
+.login-modal {
+    width: 350px;
+}
+
+.signup-modal {
+    width: 375px;
+}
+
+.modal-col-gap{
+    column-gap: 24px;
+}
+
+.modal-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.modal-spacer {
+    height: 24px;
+}
+
+.main-login-modal {
+    padding: 24px 24px 0px 24px;
+}
+
+.modal-error {
+    height: 24px;
+    align-items: center;
+    display: flex;
+}
+
+.delete-modal {
+    width: fit-content;
+}
+
+.col-spacer {
+    width: 24px;
+    display: inline-block;
+}
+
+.wsidebar {
+    overflow-y: scroll;
+}
+
+.list-item-edit, .table-input, .table-select {
+    width: 100%;
+}
+
+.list-item-edit-input {
+    padding: 23px 24px 24px 24px !important;
+}
+
+.table-input, .table-select {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.table-input-class {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    //font-size: 1.125rem;
+}
