@@ -1,5 +1,19 @@
 # CSE316-Spring21-HW3
 
+##### Configuring .env
+NOTE: In a full production application, an environment file would not be stored in a git repository. This file contains information vital to the security of the application, and should not be publicly available. For the sake of ease/learning, this .env is included in the repository, but do not do this in general.
+
+The backend utilizes a .env file to store a few constants which are necessary for the application to function. Some of that information is already there, such as the port numbers for the front and backend servers, as well as the client URL. The refresh and access token secrets are random character sequences used to sign and verify JWTs used by the authentication system. These are essentially passwords that the JWT middleware uses to hash login info, to both save new users and to verify returning ones. Use a site like https://passwordsgenerator.net/, or just come up with a random string yourself for these values. There isn't a hard length requirement on the secret, but smaller keys are more easy to guess by malicious actors, so 32 characters(256 bits) are recommended.
+
+The Mongo URI requires a bit more setup. 
+1. First create a MongoDB account: https://account.mongodb.com/account/login. 
+2. Once you are logged in, click "Create an Organization". Name it whatever you like, make sure MongoDB Atlas is selected, and create the organization(don't worry about adding members). 
+3. Create a new project.
+4. Create a new cluster(choose the free tier). The default provider/region settings should be fine, so click "create cluster", and wait for it to be created( it may take a few minutes).
+5. Once your cluster is finished configuring, click on "Connect". Add your IP and set up a database user.
+6. Click "choose a connection method", and then select the middle option, "Connect your application".
+7. Choose Node.js and version 3.6 or later, if they are not the default option. Copy the connection string, replace \<password>(including the angle brackets) with your password for the database user, and paste the string into your .env file. It should look like this:`MONGO_URI = "mongodb+srv....`
+
 ### Getting Started
 Before working with TodoTracker, make sure Node.js is installed on your machine (https://nodejs.org/en/). Either clone or download this git repository. In the TodoTracker folder complete the following steps:
 * In the root directory run npm install
