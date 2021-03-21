@@ -241,7 +241,7 @@ Query:{
 }
 ```
 
-## Relevant Links . . . . . . . . . . . . . . . . .
+## Relevant Links
 
 
 https://mongoosejs.com/docs/guide.html
