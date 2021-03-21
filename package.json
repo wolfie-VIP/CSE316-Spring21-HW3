@@ -1,0 +1,45 @@
+{
+  "name": "todo-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon",
+    "start": " concurrently \"npm:server\" \"npm:client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfie-VIP/CSE316-Spring21-HW3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolfie-VIP/CSE316-Spring21-HW3/issues"
+  },
+  "homepage": "https://github.com/wolfie-VIP/CSE316-Spring21-HW3#readme",
+  "dependencies": {
+    "@apollo/client": "^3.3.7",
+    "apollo-server": "^2.14.5",
+    "apollo-server-express": "^2.14.5",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "graphql": "^15.1.0",
+    "graphql-passport": "^0.6.3",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.1",
+    "xss-clean": "^0.1.1"
+  }
+}
