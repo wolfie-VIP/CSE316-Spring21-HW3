@@ -1,5 +1,5 @@
 # CSE316-Spring21-HW3
-
+### Getting Started
 ##### Configuring .env
 NOTE: In a full production application, an environment file would not be stored in a git repository. This file contains information vital to the security of the application, and should not be publicly available. For the sake of ease/learning, this .env is included in the repository, but do not do this in general.
 
@@ -14,7 +14,7 @@ The Mongo URI requires a bit more setup.
 6. Click "choose a connection method", and then select the middle option, "Connect your application".
 7. Choose Node.js and version 3.6 or later, if they are not the default option. Copy the connection string, replace \<password>(including the angle brackets) with your password for the database user, and paste the string into your .env file. It should look like this:`MONGO_URI = "mongodb+srv....`
 
-### Getting Started
+##### Installing Modules
 Before working with TodoTracker, make sure Node.js is installed on your machine (https://nodejs.org/en/). Either clone or download this git repository. In the TodoTracker folder complete the following steps:
 * In the root directory run npm install
 * Go to the client directory(./client) using cd client and run  npm install again.
