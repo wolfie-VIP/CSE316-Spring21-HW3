@@ -17,8 +17,8 @@ The Mongo URI requires a bit more setup.
 
 ##### Installing Modules
 Before working with TodoTracker, make sure Node.js is installed on your machine (https://nodejs.org/en/). Either clone or download this git repository. In the TodoTracker folder complete the following steps:
-* In the root directory run npm install
-* Go to the client directory(./client) using cd client and run  npm install again.
+* In the root directory run ```bash npm install```
+* Go to the client directory(./client) using ```bash cd client``` and run ```bash npm install``` again.
 * Return to the root directory using cd ..
 
 You now have everything you need to start the application, and there are two options for starting the application:
