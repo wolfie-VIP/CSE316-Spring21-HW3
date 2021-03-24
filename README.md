@@ -1,4 +1,5 @@
 # CSE316-Spring21-HW3
+## Authors: Justin Fagan and Charlie Monnone
 ### Getting Started
 ##### Configuring .env
 NOTE: In a full production application, an environment file would not be stored in a git repository. This file contains information vital to the security of the application, and should not be publicly available. For the sake of ease/learning, this .env is included in the repository, but do not do this in general.
