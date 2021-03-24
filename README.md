@@ -23,10 +23,10 @@ Before working with TodoTracker, make sure Node.js is installed on your machine 
 
 You now have everything you need to start the application, and there are two options for starting the application:
 
-* Run npm start in the root directory
-* Run nodemon in the root directory and npm start in the client directory
+* Run ```npm start``` in the root directory
+* Run ```nodemon``` in the root directory and in a separate terminal, run ```npm start``` in the client directory
 
-Generally option 1 is the preferred method as it is more convenient than manually running two separate scripts, but depending on what you’re working on, having both the front and back end servers running may be unnecessary.
+Generally option 1 is the preferred method as it is more convenient than manually running two separate scripts, but depending on what you’re working on, having both the front and back end servers running separately may help to verify information/better catch a bug.
 
 ### Backend
 ##### Index and Server-Config
