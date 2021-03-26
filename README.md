@@ -15,7 +15,8 @@ The Mongo URI requires a bit more setup.
 6. Click "choose a connection method", and then select the middle option, "Connect your application".
 7. Choose Node.js and version 3.6 or later, if they are not already selected. Eeplace \<password>(including the angle brackets) with your password for the database user, replace```myFirstDatabase``` with the database name(which we called TodoTracker) and paste the string into your .env file. It should look something like this:`MONGO_URI = "mongodb+srv....`
 8. On the MongoDB Atlas page, click "Collections", and then "Create Database". Enter both fields exactly as follows: ```Database Name: TodoTracker``` ```Collection Name: users```. Then click "Create".
-9. Finally, click the "plus" button next to the name of your database(which should be TodoTracker), and create another collection like : ```Collection Name: todolists``` 
+9. Click the "plus" button next to the name of your database(which should be TodoTracker), and create another collection like : ```Collection Name: todolists``` 
+10. On the left sidebar, click "Network Access" under security. Click "Add IP Address", and select your own. This last step shouldn't be necessary, but if you experience fetch/network issues during setup, adding your IP and 0.0.0.0 (allow from anywhere) are worth trying.   
 
 ##### Installing Modules
 Before working with TodoTracker, make sure Node.js is installed on your machine (https://nodejs.org/en/). Either clone or download this git repository. In the TodoTracker folder complete the following steps:
