@@ -12,6 +12,17 @@ const cache = new InMemoryCache({
 		client and server
 	*/
 	dataIdFromObject: object => `${object.__typename}:${object._id}`,
+	typePolicies: {
+		Query: {
+			fields: {
+				getAllEntries: {
+					merge(existing, incoming){
+						return incoming
+					}
+				},
+			},
+		},
+	},
 });
 
 // bad hardcoding, localhost port should match port in the backend's .env file

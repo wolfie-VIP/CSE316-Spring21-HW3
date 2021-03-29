@@ -71,7 +71,7 @@ export class EditItem_Transaction extends jsTPS_Transaction {
 
     async undoTransaction() {
 		const { data } = await this.updateFunction({ 
-				variables:{  itemId: this.itemID, _id: this.listID, 
+				variables:{ itemId: this.itemID, _id: this.listID, 
 							field: this.field, value: this.prev, 
 							flag: this.flag 
 						  }

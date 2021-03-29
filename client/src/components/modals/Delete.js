@@ -10,7 +10,6 @@ const Delete = (props) => {
     }
 
     return (
-        // Replace div with WModal
         <div className="delete-modal">
             <div className="modal-header" onClose={() => props.setShowDelete(false)}>
                 Delete List?
