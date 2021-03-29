@@ -16,10 +16,6 @@ const app = express();
 app.use(cors({ origin: CLIENT_LOCAL_ORIGIN, credentials: true }));
 
 const corsPolicy = async(req, res, next) => {
-    /*
-        TODO for 316 students: res.set(), Access-Control-Allow-Origin and Access-Control-Allow-Credentials headers,
-        have them set these, inspect error messages, understand why they're needed
-    */
 	res.set("Access-Control-Allow-Origin", req.headers.origin);
     res.set("Access-Control-Allow-Credentials", true);
 	next();
