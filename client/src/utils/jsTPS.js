@@ -97,7 +97,7 @@ export class UpdateListItems_Transaction extends jsTPS_Transaction {
     async doTransaction() {
 		let data;
         this.opcode === 0 ? { data } = await this.deleteFunction({
-							variables: {itemId: this.itemID, _id: this.listID, index: this.index}})
+							variables: {itemId: this.itemID, _id: this.listID}})
 						  : { data } = await this.addFunction({
 							variables: {item: this.item, _id: this.listID, index: this.index}})  
 		if(this.opcode !== 0) {
@@ -111,7 +111,7 @@ export class UpdateListItems_Transaction extends jsTPS_Transaction {
         this.opcode === 1 ? { data } = await this.deleteFunction({
 							variables: {itemId: this.itemID, _id: this.listID}})
                           : { data } = await this.addFunction({
-							variables: {item: this.item, _id: this.listID}})
+							variables: {item: this.item, _id: this.listID, index: this.index}})
 		if(this.opcode !== 1) {
             this.item._id = this.itemID = data.addItem;
         }
